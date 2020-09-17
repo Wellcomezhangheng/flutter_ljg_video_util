@@ -1,0 +1,43 @@
+name: luojigou_image_picker
+description: 集合图片视频选择，视频压缩，视频剪切
+version: 0.0.1
+author: 张衡（838579111@qq.com）
+homepage:
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  lottie: 0.3.6
+  oktoast: 2.3.2
+  image_pickers: ^1.0.7+6
+  video_player: 0.10.11+2
+  flutter_ffmpeg: 0.2.10
+  video_thumbnail: 0.2.2
+  path_provider: 1.6.11
+  event_bus: 1.1.1
+  intl: 0.16.1
+  path: 1.6.4
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.video.luojigou_image_picker
+        pluginClass: LuojigouImagePickerPlugin
+      ios:
+        pluginClass: LuojigouImagePickerPlugin
+
+
+  assets:
+    - assets/
+    - assets/loading/
+    - assets/loading/images/
